@@ -91,3 +91,35 @@ cekJudul = judul.istitle()
 print("apakah judul semauanya huruf" + " " + str(cekJudul))
 
 # mengecek komponenet starswith() dan endswith()
+
+cek_start = "To Wong Foo Thanks For Everything Julie Newmar".startswith("To")
+print("start + = " + str(cek_start))
+
+cek_end = "To Wong Foo Thanks For Everything Julie Newmar".endswith("Newmar")
+print("start + = " + str(cek_end))
+
+# penggunaan komponent join() split()
+
+nama = ['umya','asfarel','adam']
+gabungan = ','.join(nama)
+print(nama)
+print(gabungan)
+
+gabungan = '-'.join(nama)
+print(nama)
+print(gabungan)
+
+nama = 'umayggsomayggll'
+print(nama.split("gg"))
+
+# alokasi karakter rjust(), ljust(), center()
+
+kanan = "umay".rjust(10)
+print("'"+kanan+"'")
+
+kiri = "umay".ljust(10)
+print("'"+kiri+"'")
+
+tengah = "umay".center(10)
+print("'"+tengah+"'")
+
