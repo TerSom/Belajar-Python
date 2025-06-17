@@ -35,3 +35,26 @@ print(format_angka)
 angka = 2005.2425
 format_str = f"desimal = {angka:010.3f}"
 print(format_str)
+
+# menampilkan tanda - atau +
+angka_minus = -131
+angkat_plus = +131.9799879
+formatMinus = f"angka minus adalah {angka_minus:-d}"
+formatPlus = f"angka minus adalah {angkat_plus:+.2f}"
+print(formatMinus)
+print(formatPlus)
+
+# mengformat persen
+angka = 5
+formatPersen = f"angka persen adalah {angka:.0%}"
+print(formatPersen)
+
+# format angka lain (binary oktal hexadesimal)
+
+angka = 255
+formatbinary = f"angka binarynya adalah {bin(angka)}"
+formatOktal = f"angka oktalnya adalah {oct(angka)}"
+formatHexadesimal = f"angka hexadesimalnya adalah {hex(angka)}"
+print(formatbinary)
+print(formatOktal)
+print(formatHexadesimal)
