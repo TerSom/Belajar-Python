@@ -1,52 +1,53 @@
-count = 0
 sisi = 10
 
-# # menggunakan for
+# Menggunakan for
+print("=== Menggunakan for ===")
+count = 0
 for i in range(sisi):
     count += 1
-    print("*"*count)
+    print("*" * count)
 
-
-# menggunakan while
+# Menggunakan while
+print("\n=== Menggunakan while ===")
 count = 0
 while True:
-    count += 1 
-    print("*"*count)
+    count += 1
+    print("*" * count)
     if count == 5:
         break
 
-# menggunakan while genap saja
+# Menggunakan while genap saja
+print("\n=== Menggunakan while genap saja ===")
 count = 1
 while True:
-    if count%2:
+    if count % 2:
         count += 1
         continue
-    print("*"*count)
+    print("*" * count)
     count += 1
     if count > sisi:
         break
 
-# menggunakan while ganjil saja
+# Menggunakan while ganjil saja
+print("\n=== Menggunakan while ganjil saja ===")
 count = 1
 while True:
-    if count%2:
-        print("*"*count)
+    if count % 2:
+        print("*" * count)
         count += 1
     else:
         count += 1
         continue
-    
     if count > sisi:
         break
 
-
-# menggunakan while ganjil membuat segitiga
+# Menggunakan while ganjil membuat segitiga
+print("\n=== Menggunakan while ganjil membuat segitiga ===")
 count = 1
-spasi = int(sisi/2)
-
+spasi = int(sisi / 2)
 while True:
-    if count%2:
-        print(" "*spasi,"*"*count)
+    if count % 2:
+        print(" " * spasi, "*" * count)
         spasi -= 1
         count += 1
     else:
@@ -55,14 +56,27 @@ while True:
     if count > sisi:
         break
 
-# # membuat segitiga
-
+# Membuat segitiga
+print("\n=== Membuat segitiga ===")
 count = 1
-spasi = int(sisi/2)
-
+spasi = int(sisi / 2)
 while True:
-    print(" "*spasi,"*"*count)
+    print(" " * spasi, "*" * count)
     spasi -= 1
     count += 2
     if count > sisi:
         break
+
+# Membuat ketupat
+print("\n=== Membuat ketupat ===")
+sisi = 5
+
+# Bagian atas ketupat
+for i in range(1, sisi + 1):
+    print(" " * (sisi - i), end = "")
+    print("* " * i)
+
+# Bagian bawah ketupat
+for i in range(sisi - 1, 0, -1):
+    print(" " * (sisi - i), end = "")
+    print("* " * i)
